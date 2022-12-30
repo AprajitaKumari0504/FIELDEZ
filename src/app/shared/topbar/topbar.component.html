@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FIELDEZ TASK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item">
+              <a routerLink="/user/dashboard" routerLinkActive="active" class="nav-link">Employee Screen</a>
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" routerLink="/admin/samples" routerLinkActive="active">Employee Registration</a>
+          </li> 
+             
+        </ul>
+          <div class="d-flex">
+                <div class="nav-item">
+                <a class="navbar-brand" routerLink="/auth/registration" routerLinkActive="active">Registration</a>
+              </div>
+                <div>
+                <a class="navbar-brand" routerLink="/auth/login" routerLinkActive="active">Login</a>
+              </div>
+                <div>
+                <a class="navbar-brand" (click)="logout()">Logout</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </nav>
